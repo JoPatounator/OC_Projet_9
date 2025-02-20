@@ -1,0 +1,25 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+section {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+section.banner {
+  animation-delay: 0s;
+}
+section.story {
+  animation-delay: 2s;
+}
+section#studio {
+  animation-delay: 4s;
+}
+section.oscars-court-metrage {
+  animation-delay: 6s;
+}/*# sourceMappingURL=style-fade-in.css.map */

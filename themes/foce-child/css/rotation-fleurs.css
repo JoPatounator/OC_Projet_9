@@ -1,0 +1,22 @@
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.story .story__article::after {
+  animation: rotateFlower 20s linear infinite;
+}
+.story h2::after {
+  animation: rotateFlower 20s linear infinite;
+}
+
+#studio h2::after, #studio h2::before {
+  animation: rotateFlower 20s linear infinite;
+}
+
+.site-footer::before, .site-footer::after {
+  animation: rotateFlower 20s linear infinite;
+}/*# sourceMappingURL=rotation-fleurs.css.map */

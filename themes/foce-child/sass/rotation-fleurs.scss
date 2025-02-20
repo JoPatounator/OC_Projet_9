@@ -1,0 +1,43 @@
+// rotation-fleurs.scss
+
+// Définir l'animation de rotation
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0deg); // Commence à 0 degré
+    }
+
+    to {
+        transform: rotate(360deg); // Termine à 360 degrés (un tour complet)
+    }
+}
+
+// Appliquer l'animation à toutes les fleurs
+.story {
+    .story__article::after {
+        animation: rotateFlower 20s linear infinite;
+    }
+
+    h2::after {
+        animation: rotateFlower 20s linear infinite;
+
+    }
+
+}
+
+
+#studio {
+
+    & h2::after,
+    & h2::before {
+        animation: rotateFlower 20s linear infinite;
+    }
+}
+
+.site-footer {
+
+    &::before,
+    &::after {
+        animation: rotateFlower 20s linear infinite;
+    }
+
+}

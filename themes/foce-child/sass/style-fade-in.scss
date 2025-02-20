@@ -1,0 +1,35 @@
+// animation  fadeIn
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// Communs à toutes les sections
+section {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out; // Animation 3s
+    animation-fill-mode: forwards; // conservation affichage apres la fin 
+
+    //Spécifiques à chaque section
+    &.banner {
+        animation-delay: 0s; // Pas de délai pour .banner
+    }
+
+    &.story {
+        animation-delay: 2s; // Délai de 1 seconde pour .story
+    }
+
+    &#studio {
+        animation-delay: 4s; // Délai de 2 secondes pour #studio
+    }
+
+    &.oscars-court-metrage {
+        animation-delay: 6s; // Délai de 3 secondes pour #studio
+
+    }
+}
