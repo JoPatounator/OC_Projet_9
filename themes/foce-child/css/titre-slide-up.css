@@ -1,53 +1,4 @@
 @charset "UTF-8";
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-section {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out;
-  animation-fill-mode: forwards;
-}
-section.banner {
-  animation-delay: 0s;
-}
-section.story {
-  animation-delay: 1s;
-}
-section#studio {
-  animation-delay: 3s;
-}
-section.oscars-court-metrage {
-  animation-delay: 5s;
-}
-
-@keyframes rotateFlower {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.story .story__article::after {
-  animation: rotateFlower 20s linear infinite;
-}
-.story h2::after {
-  animation: rotateFlower 20s linear infinite;
-}
-
-#studio h2::after, #studio h2::before {
-  animation: rotateFlower 20s linear infinite;
-}
-
-.site-footer::before, .site-footer::after {
-  animation: rotateFlower 20s linear infinite;
-}
-
 /* Définir l'animation "slide-up" */
 @keyframes slide-up {
   0% {
@@ -121,25 +72,4 @@ section.oscars-court-metrage {
   color: white;
   text-align: center;
   margin: auto;
-}
-
-.site-footer {
-  overflow: visible;
-}
-
-.site-footer::after {
-  bottom: 690px;
-}
-
-.site-footer::before {
-  left: 152px;
-  top: -490px;
-}
-
-.oscars-court-metrage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  heigHt: 490px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=titre-slide-up.css.map */
