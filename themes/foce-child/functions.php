@@ -7,6 +7,14 @@ function theme_enqueue_styles()
     //wp_enqueue_style('fade-in-style', get_template_directory_uri() . '/css/style-fade-in.css');
 }
 
+// Enqueuing the custom script
+add_action('wp_enqueue_scripts', 'enqueue_titre_slide_up');
+function enqueue_titre_slide_up()
+{
+    // Ajouter le script personnalisé directement à la file d'attente
+    wp_enqueue_script('titre-slide-up', get_stylesheet_directory_uri() . '/js/titre-slide-up.js', array(), null, true);
+}
+
 // Get customizer options form parent theme
 if (get_stylesheet() !== get_template()) {
     add_filter('pre_update_option_theme_mods_' . get_stylesheet(), function ($value, $old_value) {

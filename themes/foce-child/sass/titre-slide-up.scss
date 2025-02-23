@@ -6,6 +6,7 @@
         opacity: 0;
     }
 
+
     50% {
         /* À la moitié de l'animation, la lettre monte légèrement au-dessus de sa position finale */
         transform: translateY(-10%);
@@ -20,60 +21,55 @@
 }
 
 /* Définir les styles pour la classe "background" */
-.background {
-    /* Occuper toute la largeur de l'écran */
+/*.background {
     width: 100%;
-    /* Occuper toute la hauteur de la vue */
     height: 100vh;
-    /* Utiliser l'image de fond centrée et sans répétition */
     background: url('path-to-your-image.jpg') no-repeat center center;
-    /* Adapter l'image de fond pour couvrir toute la zone */
     background-size: cover;
-    /* Centrer le contenu horizontalement et verticalement */
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 /* Définir les styles pour la classe "title" */
 .title {
     height: 300px;
-    /* Définir la taille de la police du titre */
     font-size: 4.429rem;
-    /* Couleur blanche pour le texte */
     color: white;
-    /* Utiliser Flexbox pour afficher les mots en ligne */
     display: flex;
-    /* Ajouter un espace entre chaque mot */
     gap: 0.5em;
     width: fit-content;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    flex-wrap: nowrap;
+    text-align: center;
     margin: auto;
-    //background-size: cover;
+    align-items: center;
 }
 
 
 
-/* Définir les styles pour chaque mot du titre */
+
+/* Déf les styles pour chaque mot du titre */
 .title span {
-    /* Afficher chaque mot en tant qu'élément en ligne */
+    /* Affiche chaque mot en élément en ligne */
+    opacity: 0;
     display: inline-block;
-    /* Appliquer l'animation "slide-up" */
-    animation: slide-up 2s ease-in-out forwards;
 }
+
+
 
 /* Appliquer des délais différents pour chaque mot afin de créer l'effet de vague */
-.title .mot-1 {
-    animation-delay: 2s;
+.scroll-slide-up .mot-1 {
+    animation: slide-up 1.5s ease-in-out forwards;
+    animation-delay: 0.1s;
     color: white;
     text-align: center;
     margin: auto;
 }
 
-.title .mot-2 {
-    animation-delay: 2.3s;
+.scroll-slide-up .mot-2 {
+    animation: slide-up 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
     color: white;
     text-align: center;
     margin: auto;
