@@ -1,11 +1,14 @@
+// Fichier mise en forme "style.scss"
+
 @import 'style-fade-in';
 @import 'rotation-fleurs';
 @import 'titre-slide-up';
+@import 'background-video.scss';
 
 // Ajouter d'autres importations ici si nécessaire.
 
 .site-footer {
-    overflow: visible; // A  
+    overflow: visible; // A supprimer lorsque le court metrage ne sera plus d'actualité !!! 
 }
 
 .site-footer::after {

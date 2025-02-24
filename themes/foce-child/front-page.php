@@ -6,7 +6,11 @@ get_header();
 <main id="primary" class="site-main">
     <section class="banner">
         <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+        <video id="background-video" autoplay loop muted>
+            <source src="<?php echo 'http://koukaki.local/wp-content/uploads/2025/01/StudioKoukaki-videoheadersansson1.mp4'; ?>" type="video/mp4">
+        </video>
     </section>
+
     <section id="#story" class="story">
         <!--<h2>L'histoire</h2>-->
         <h2 class="title">
