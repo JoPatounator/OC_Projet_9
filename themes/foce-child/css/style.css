@@ -115,26 +115,17 @@ section.oscars-court-metrage {
   margin: auto;
 }
 
-/* fichier scss "background-video.scss" */
-/* Styles par défaut pour les écrans de desktop */
 .banner {
   background-image: none;
-  /* Supprime l'image de fond */
   min-height: 806px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  /* Ajout pour éviter le débordement de la vidéo */
-}
-.banner img {
-  display: none;
-  /* Cache l'image */
 }
 .banner #background-video {
   display: block;
-  /* Affiche la vidéo */
   position: absolute;
   top: 0;
   left: 0;
@@ -143,26 +134,21 @@ section.oscars-court-metrage {
   object-fit: cover;
   z-index: -1;
   margin: 0;
-  /* Assurez-vous qu'il n'y a pas de marge */
   padding: 0;
-  /* Assurez-vous qu'il n'y a pas de padding */
 }
 
-/* Media query pour les écrans mobiles */
 @media (max-width: 767px) {
   .banner {
     background-image: url("/wp-content/themes/foce/assets/images/banner.png");
     background-size: cover;
-  }
-  .banner img {
-    display: block;
-    /* Affiche l'image */
-    margin-top: -10%;
-    width: 50%;
+    /*img {
+        display: block; // Affichage image de titre en mode mobile
+        margin-top: -10%;
+        width: 50%;
+    }*/
   }
   .banner #background-video {
     display: none;
-    /* Masque la vidéo */
   }
 }
 .site-footer {

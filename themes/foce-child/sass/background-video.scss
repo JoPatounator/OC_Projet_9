@@ -1,24 +1,17 @@
-/* fichier scss "background-video.scss" */
-/* Styles par défaut pour les écrans de desktop */
+// fichier scss "background-video.scss" 
+// Styles par défaut pour les écrans de desktop
+
 .banner {
-    background-image: none;
-    /* Supprime l'image de fond */
+    background-image: none; // Suppression de l'image de fond en mode desktop  
     min-height: 806px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    /* Ajout pour éviter le débordement de la vidéo */
-
-    img {
-        display: none;
-        /* Cache l'image */
-    }
 
     #background-video {
-        display: block;
-        /* Affiche la vidéo */
+        display: block; // Affiche la video en mode mobile
         position: absolute;
         top: 0;
         left: 0;
@@ -27,28 +20,24 @@
         object-fit: cover;
         z-index: -1;
         margin: 0;
-        /* Assurez-vous qu'il n'y a pas de marge */
         padding: 0;
-        /* Assurez-vous qu'il n'y a pas de padding */
     }
 }
 
-/* Media query pour les écrans mobiles */
+// Media query pour les mobiles 
 @media (max-width: 767px) {
     .banner {
-        background-image: url("/wp-content/themes/foce/assets/images/banner.png");
+        background-image: url("/wp-content/themes/foce/assets/images/banner.png"); // Appel du fond statique en mode mobile
         background-size: cover;
 
-        img {
-            display: block;
-            /* Affiche l'image */
+        /*img {
+            display: block; // Affichage image de titre en mode mobile
             margin-top: -10%;
             width: 50%;
-        }
+        }*/
 
         #background-video {
-            display: none;
-            /* Masque la vidéo */
+            display: none; // Masque la video en mode mobile
         }
     }
 }

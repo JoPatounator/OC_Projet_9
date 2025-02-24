@@ -1,0 +1,22 @@
+//Fichier "style-global.scss"
+
+.site-footer {
+    overflow: visible; // A supprimer lorsque le court metrage ne sera plus d'actualité !!! 
+}
+
+.site-footer::after {
+    bottom: 690px;
+}
+
+.site-footer::before {
+    left: 152px;
+    top: -490px;
+}
+
+.oscars-court-metrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    heigHt: 490px;
+}
