@@ -1,0 +1,60 @@
+// Variables
+$primary-color: white;
+$secondary-color: #3498db;
+
+// Characters Slider
+.characters-slider {
+    max-width: 2200px;
+    margin: 40px 0;
+    text-align: center;
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    .swiper {
+        width: 100%;
+        max-width: 1266px;
+        margin: 0 auto;
+
+        &-wrapper {
+            display: flex;
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%; // Largeur maximale pour chaque slide
+
+            figure {
+                margin: 0;
+                padding: 10px;
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                figcaption {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $secondary-color;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        /*&-button-prev,
+        &-button-next {
+            color: $primary-color;
+        }*/
+    }
+}

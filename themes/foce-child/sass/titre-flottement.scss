@@ -1,0 +1,33 @@
+// Variables pour personnaliser l'animation
+$duree: 4s; // Durée de l'animation
+$val-Y: 30px; // Amplitude verticale du mouvement
+$val-X: 50px; // Vitesse horizontale du mouvement
+
+// Cléframes de l'animation
+@keyframes flottement {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate($val-X, -$val-Y);
+  }
+
+  50% {
+    transform: translate($val-X, 0);
+  }
+
+  75% {
+    transform: translate($val-X, $val-Y);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.banner img {
+  position: relative;
+  animation: flottement $duree ease-in-out infinite;
+}
