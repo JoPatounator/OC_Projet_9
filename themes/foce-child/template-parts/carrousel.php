@@ -1,12 +1,11 @@
 <?php
 /* Template partiel SwiperJS.*/
 ?>
-
 <div class="characters-slider">
     <h3>Les personnages</h3>
     <div class="swiper characters-swiper">
         <div class="swiper-wrapper">
-            <!-- Slide 1 : Kawaneko -->
+            <!-- Slides -->
             <div class="swiper-slide">
                 <figure>
                     <img src="http://koukaki.local/wp-content/uploads/2022/06/Kawaneko.png" alt="Kawaneko">
@@ -14,7 +13,6 @@
                 </figure>
             </div>
 
-            <!-- Slide 2 : Orenjiiro -->
             <div class="swiper-slide">
                 <figure>
                     <img src="http://koukaki.local/wp-content/uploads/2022/06/Orenjiiro-1.png" alt="Orenjiiro">
@@ -22,7 +20,6 @@
                 </figure>
             </div>
 
-            <!-- Slide 3 : Pinku -->
             <div class="swiper-slide">
                 <figure>
                     <img src="http://koukaki.local/wp-content/uploads/2022/06/Pinku-1.png" alt="Pinku">
@@ -30,7 +27,6 @@
                 </figure>
             </div>
 
-            <!-- Slide 4 : Tenshi -->
             <div class="swiper-slide">
                 <figure>
                     <img src="http://koukaki.local/wp-content/uploads/2022/06/Tenshi-1.png" alt="Tenshi">
@@ -38,7 +34,6 @@
                 </figure>
             </div>
 
-            <!-- Slide 5 : Jaakuna -->
             <div class="swiper-slide">
                 <figure>
                     <img src="http://koukaki.local/wp-content/uploads/2022/06/Jaakuna-1.png" alt="Jaakuna">

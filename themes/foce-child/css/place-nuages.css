@@ -1,0 +1,28 @@
+#place {
+  position: relative;
+  background-image: url(http://koukaki.local/wp-content/uploads/2025/01/Studio_Koukaki-image_place.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+#place .nuages {
+  position: relative;
+  width: 100%;
+}
+#place .nuages .gros-nuage,
+#place .nuages .petit-nuage {
+  position: absolute;
+  transition: transform 2s ease;
+}
+#place .nuages .gros-nuage {
+  opacity: 0.8;
+  width: 316px;
+  top: -4%;
+  left: 130%;
+}
+#place .nuages .petit-nuage {
+  opacity: 0.6;
+  width: 142px;
+  top: 33%;
+  left: 90%;
+}/*# sourceMappingURL=place-nuages.css.map */

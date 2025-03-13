@@ -1,5 +1,4 @@
-
-// Créez l'observateur comme dans les exemples ci-dessus
+// Créez observateur
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -10,8 +9,8 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-// Sélectionnez plusieurs éléments avec "querySelectorAll"
+// Sélectionnez tous les title
 const titles = document.querySelectorAll('.title');
 
-// Parcourez les éléments et ajoutez chacun à l'observateur
+// Parcours chaque title les ajouter à l'observateur
 titles.forEach((element) => observer.observe(element));

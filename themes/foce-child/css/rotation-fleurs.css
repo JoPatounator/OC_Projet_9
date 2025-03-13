@@ -10,6 +10,9 @@
   animation: rotateFlower 20s linear infinite;
 }
 .story h2::after {
+  width: 155px;
+  height: 155px;
+  transform-origin: center center;
   animation: rotateFlower 20s linear infinite;
 }
 

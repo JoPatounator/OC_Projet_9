@@ -1,47 +1,83 @@
+/*
+// Variables
+$person-titre-couleur: black;
+
+// Characters Slider
 .characters-slider {
-  max-width: 2200px;
-  margin: 40px 0;
-  text-align: center;
+    //display:flex;
+    max-width: 1266px;
+    //margin: 40px 0;
+    margin: auto;
+    text-align: center;
+
+    .swiper {
+        width: 100%;
+        max-width: 1266px;
+        margin: auto;
+
+        &-wrapper {
+            display: flex;
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            width: 100%; // Largeur maximale pour chaque slide
+
+            figure {
+                margin: 0;
+                padding: 10px;
+
+                img {
+                    width: 400px;
+                    height: auto;
+                }
+
+                figcaption {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $person-titre-couleur;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
-.characters-slider h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: white;
+ */
+.characters-slider {
+  max-width: 1266px;
+  margin: auto;
+  text-align: center;
 }
 .characters-slider .swiper {
   width: 100%;
   max-width: 1266px;
-  margin: 0 auto;
-  /*&-button-prev,
-  &-button-next {
-      color: $primary-color;
-  }*/
+  margin: auto;
 }
 .characters-slider .swiper-wrapper {
   display: flex;
+  align-items: center;
 }
 .characters-slider .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  background-color: transparent;
 }
 .characters-slider .swiper-slide figure {
   margin: 0;
   padding: 10px;
 }
 .characters-slider .swiper-slide figure img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  max-width: 400px;
   height: auto;
-  border-radius: 10px;
 }
 .characters-slider .swiper-slide figure figcaption {
   font-size: 16px;
   font-weight: bold;
-  color: #3498db;
+  color: black;
   margin-top: 10px;
 }/*# sourceMappingURL=swiperJS.css.map */

@@ -1,6 +1,8 @@
 <?php
 
-get_header();
+//get_header();
+// Appel du template partiel du header pour mise en place du menu burger
+get_template_part('/template-parts/header');
 ?>
 
 <main id="primary" class="site-main">
@@ -40,6 +42,10 @@ get_header();
                 <h3>Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
+            <div class="nuages">
+                <img class="gros-nuage" src="http://koukaki.local/wp-content/uploads/2025/01/big_cloud.png">
+                <img class="petit-nuage" src="http://koukaki.local/wp-content/uploads/2025/01/little_cloud.png">
+            </div>
 
         </article>
     </section>
@@ -68,5 +74,6 @@ get_header();
 <?php
 //Appel du template part "oscars-court-metrage"
 get_template_part('/template-parts/oscars-court-metrage', 'none'); // A désactiver lorsque la section "oscars-court-metrage" ne sera plus necessaire
-get_footer();
+//get_footer();
+get_template_part('/template-parts/footer', 'none');
 ?>

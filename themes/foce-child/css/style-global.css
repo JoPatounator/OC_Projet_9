@@ -27,4 +27,8 @@ body {
   align-items: center;
   position: relative;
   heigHt: 490px;
+}
+
+.story #place {
+  background-image: url(http://koukaki.local/wp-content/uploads/2025/01/Studio_Koukaki-image_place.png);
 }/*# sourceMappingURL=style-global.css.map */

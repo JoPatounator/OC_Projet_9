@@ -1,23 +1,19 @@
+/*
 // Variables
-$primary-color: white;
-$secondary-color: #3498db;
+$person-titre-couleur: black;
 
 // Characters Slider
 .characters-slider {
-    max-width: 2200px;
-    margin: 40px 0;
+    //display:flex;
+    max-width: 1266px;
+    //margin: 40px 0;
+    margin: auto;
     text-align: center;
-
-    h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: $primary-color;
-    }
 
     .swiper {
         width: 100%;
         max-width: 1266px;
-        margin: 0 auto;
+        margin: auto;
 
         &-wrapper {
             display: flex;
@@ -27,9 +23,7 @@ $secondary-color: #3498db;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: transparent;
             width: 100%; // Largeur maximale pour chaque slide
 
             figure {
@@ -38,23 +32,66 @@ $secondary-color: #3498db;
 
                 img {
                     width: 400px;
-                    height: 400px;
                     height: auto;
-                    border-radius: 10px;
                 }
 
                 figcaption {
                     font-size: 16px;
                     font-weight: bold;
-                    color: $secondary-color;
+                    color: $person-titre-couleur;
                     margin-top: 10px;
                 }
             }
         }
+    }
+}
+ */
 
-        /*&-button-prev,
-        &-button-next {
-            color: $primary-color;
-        }*/
+//--------------------------------------------------------------------------------------------
+
+// Variables
+$person-titre-couleur: black;
+
+// Characters Slider
+.characters-slider {
+    max-width: 1266px;
+    margin: auto; // Centre le conteneur dans la page
+    text-align: center;
+
+    .swiper {
+        width: 100%; // Le conteneur Swiper doit occuper toute la largeur disponible
+        max-width: 1266px;
+        margin: auto;
+
+        &-wrapper {
+            display: flex;
+            align-items: center; // Aligne verticalement les slides
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+
+            figure {
+                margin: 0;
+                padding: 10px;
+
+                img {
+                    width: 300px;
+                    //width: 100%;
+                    max-width: 400px; // Limite la taille maximale de l'image
+                    height: auto;
+                }
+
+                figcaption {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $person-titre-couleur;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
