@@ -48,6 +48,10 @@
                                             ?>" rel="home"><?php bloginfo('name');
                                                             ?></a>
 
+                <?php
+                // Ajout du template partiel pour decoration menu burger (chat, fleurs, titre)
+                get_template_part('template-parts/deco-menu-burger');
+                ?>
             </nav><!-- #site-navigation -->
 
         </header><!-- #masthead -->
