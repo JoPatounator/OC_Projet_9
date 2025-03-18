@@ -10,6 +10,7 @@
         <img src="http://koukaki.local/wp-content/uploads/2025/03/Sunflower.png" alt="Sunflower" class="deco-sunflower">
         <img src="http://koukaki.local/wp-content/uploads/2025/03/Random-Flower.png" alt="Random Flower" class="deco-random-flower">
         <img src="http://koukaki.local/wp-content/uploads/2025/03/Flower.png" alt="Flower" class="deco-flower">
+        <img src="http://koukaki.local/wp-content/uploads/2025/03/hibiscus_footer.png" alt="Hibiscus" class="deco-hibiscus">
     </div>
 
     <!-- Groupe des chats -->

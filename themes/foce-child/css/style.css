@@ -178,12 +178,20 @@ body {
   background-image: url(http://koukaki.local/wp-content/uploads/2025/01/Studio_Koukaki-image_place.png);
 }
 
+.story {
+  animation-delay: 2s;
+  margin-top: 150px;
+}
+
 .background-mask-flower {
-  margin-top: 70px;
+  position: relative;
+  top: 20px;
+  margin-top: 45px;
   width: 100%;
-  height: 400px;
+  height: 401px;
   background-color: #fff5e8;
   z-index: 10;
+  padding-top: 265px;
 }
 
 @keyframes flottement {
@@ -369,12 +377,12 @@ $person-titre-couleur: black;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: 3;
-  gap: 30px;
+  gap: 57px;
 }
 .site-header .main-navigation.toggled .nav-menu li {
   display: block;
@@ -382,6 +390,7 @@ $person-titre-couleur: black;
 }
 .site-header .main-navigation.toggled .menu-burger-deco {
   opacity: 1;
+  height: 943px;
 }
 .site-header .main-navigation a {
   display: block;
@@ -394,18 +403,19 @@ $person-titre-couleur: black;
 .site-header .site-title {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 21.48px;
+  font-size: 21px;
   line-height: 100%;
   flex: 1;
   text-align: center;
   text-decoration: none;
   color: #333;
+  margin-right: -232px;
 }
 .site-header .menu-toggle {
   position: relative;
   width: 60px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 127px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,18 +451,17 @@ $person-titre-couleur: black;
 .menu-burger-deco {
   position: absolute;
   width: 100%;
-  height: 100vh;
-  top: 450px;
+  height: 102vh;
+  top: 80px;
   overflow: hidden;
   z-index: 2;
   opacity: 0;
 }
 .menu-burger-deco .deco-logo {
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 15px;
+  left: 720px;
   transform: translateX(-50%);
-  width: 150px;
 }
 .menu-burger-deco .deco-flowers {
   position: relative;
@@ -461,57 +470,60 @@ $person-titre-couleur: black;
   position: absolute;
   width: 172px;
   height: auto;
-  top: 50px;
-  left: -30px;
+  top: 70px;
+  left: -60px;
 }
 .menu-burger-deco .deco-flowers .deco-sunflower {
   position: absolute;
   width: 216px;
   height: auto;
-  top: 100px;
-  right: -40px;
+  top: 87px;
+  left: 1036px;
 }
 .menu-burger-deco .deco-flowers .deco-random-flower {
   position: absolute;
   width: 75px;
   height: auto;
-  bottom: 200px;
-  right: 20px;
+  top: 394px;
+  right: -30px;
 }
 .menu-burger-deco .deco-flowers .deco-flower {
   position: absolute;
-  width: 70px;
+  top: 482px;
   height: auto;
   bottom: 100px;
-  left: 50px;
+  left: 211px;
+}
+.menu-burger-deco .deco-flowers .deco-hibiscus {
+  position: absolute;
+  top: 650px;
+  height: auto;
+  left: 1110px;
 }
 .menu-burger-deco .deco-cats {
   position: relative;
 }
 .menu-burger-deco .deco-cats .deco-cat-1 {
   position: absolute;
-  width: 100px;
   height: auto;
-  top: 150px;
-  left: 30px;
+  top: 160px;
+  left: 265px;
 }
 .menu-burger-deco .deco-cats .deco-cat-2 {
   position: absolute;
-  width: 150px;
   height: auto;
-  bottom: 150px;
-  right: 50px;
+  right: 211px;
+  top: 469px;
 }
 .menu-burger-deco .deco-cats .deco-cat-3 {
   position: absolute;
-  width: 90px;
   height: auto;
-  bottom: 50px;
-  left: -10px;
+  left: 80px;
+  top: 748px;
 }
 .menu-burger-deco .deco-footer {
   position: absolute;
-  bottom: 20px;
-  left: calc(50% - 80px);
+  bottom: 34px;
+  left: 640px;
   width: 160px;
 }/*# sourceMappingURL=style.css.map */
