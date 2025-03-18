@@ -45,6 +45,8 @@ section.oscars-court-metrage {
 
 #studio h2::after, #studio h2::before {
   animation: rotateFlower 20s linear infinite;
+  width: 109px;
+  height: 109px;
 }
 
 .site-footer::before, .site-footer::after {
@@ -359,6 +361,21 @@ $person-titre-couleur: black;
   opacity: 0;
   transition: opacity 1s ease;
 }
+.site-header .main-navigation.toggled {
+  /*.nav-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 105%;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 3; // Menu burger au-dessus des éléments de décoration
+      gap: 57px;
+  }*/
+}
 .site-header .main-navigation.toggled .line:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -378,8 +395,8 @@ $person-titre-couleur: black;
   justify-content: center;
   position: absolute;
   top: 105%;
-  left: 0;
-  width: 100%;
+  left: 445px;
+  width: 38%;
   height: 100vh;
   z-index: 3;
   gap: 57px;
@@ -460,8 +477,7 @@ $person-titre-couleur: black;
 .menu-burger-deco .deco-logo {
   position: absolute;
   top: 15px;
-  left: 720px;
-  transform: translateX(-50%);
+  left: 600px;
 }
 .menu-burger-deco .deco-flowers {
   position: relative;
@@ -508,6 +524,7 @@ $person-titre-couleur: black;
   height: auto;
   top: 160px;
   left: 265px;
+  z-index: 4;
 }
 .menu-burger-deco .deco-cats .deco-cat-2 {
   position: absolute;
@@ -526,4 +543,126 @@ $person-titre-couleur: black;
   bottom: 34px;
   left: 640px;
   width: 160px;
+}
+
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.menu-burger-deco .deco-flowers .deco-orchid,
+.menu-burger-deco .deco-flowers .deco-sunflower,
+.menu-burger-deco .deco-flowers .deco-random-flower,
+.menu-burger-deco .deco-flowers .deco-flower,
+.menu-burger-deco .deco-flowers .deco-hibiscus {
+  animation: rotateFlower 20s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes flottementChats {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-10px, -10px) rotate(-4deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(4deg);
+  }
+  75% {
+    transform: translate(-6px, 6px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+/*.menu-burger-deco {
+    .deco-cats {
+
+        .deco-cat-1,
+        .deco-cat-2,
+        .deco-cat-3 {
+            animation: flottementChats 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
+            transform-origin: center center; // Point de rotation au centre
+        }
+    }
+}*/
+.menu-burger-deco .deco-cats .deco-cat-1 {
+  animation: flottementChats 6s ease-in-out infinite;
+}
+.menu-burger-deco .deco-cats .deco-cat-2 {
+  animation: flottementChats 7s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.menu-burger-deco .deco-cats .deco-cat-3 {
+  animation: flottementChats 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes flottementTitle {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-10px, -10px) rotate(-4deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(4deg);
+  }
+  75% {
+    transform: translate(-6px, 6px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+/*.menu-burger-deco {
+    .deco-cats {
+
+        .deco-cat-1,
+        .deco-cat-2,
+        .deco-cat-3 {
+            animation: flottementChats 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
+            transform-origin: center center; // Point de rotation au centre
+        }
+    }
+}*/
+.menu-burger-deco .deco-logo {
+  animation: flottementTitle 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.nav-menu li a {
+  opacity: 0;
+  display: inline-block;
+  animation: slide-up 1.5s ease-in-out forwards;
+}
+.nav-menu li:nth-child(1) a {
+  animation-delay: 0.1s;
+}
+.nav-menu li:nth-child(2) a {
+  animation-delay: 0.3s;
+}
+.nav-menu li:nth-child(3) a {
+  animation-delay: 0.5s;
+}
+.nav-menu li:nth-child(4) a {
+  animation-delay: 0.7s;
 }/*# sourceMappingURL=style.css.map */

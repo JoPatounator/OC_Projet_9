@@ -1,0 +1,27 @@
+// rotation-fleur-menu-burger.scss
+
+// Définition de l'animation de rotation
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0deg); // Commence à 0 degré
+    }
+
+    to {
+        transform: rotate(360deg); // Termine à 360 degrés
+    }
+}
+
+// Appliquer l'animation aux fleurs dans le menu burger
+.menu-burger-deco {
+    .deco-flowers {
+
+        .deco-orchid,
+        .deco-sunflower,
+        .deco-random-flower,
+        .deco-flower,
+        .deco-hibiscus {
+            animation: rotateFlower 20s linear infinite;
+            transform-origin: center center;
+        }
+    }
+}

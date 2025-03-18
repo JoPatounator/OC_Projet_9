@@ -1,0 +1,55 @@
+// animation-chat-menu-burger.scss
+
+// Définition de l'animation de flottement
+@keyframes flottementChats {
+    0% {
+        transform: translate(0, 0) rotate(0deg); // Position initiale
+    }
+
+    25% {
+        transform: translate(-10px, -10px) rotate(-4deg); // Déplacement léger vers la gauche et le haut
+    }
+
+    50% {
+        transform: translate(10px, 10px) rotate(4deg); // Déplacement léger vers la droite et le bas
+    }
+
+    75% {
+        transform: translate(-6px, 6px) rotate(-2deg); // Retour progressif
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg); // Retour à la position initiale
+    }
+}
+
+// Appliquer l'animation à tous les chats dans le menu burger
+/*.menu-burger-deco {
+    .deco-cats {
+
+        .deco-cat-1,
+        .deco-cat-2,
+        .deco-cat-3 {
+            animation: flottementChats 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
+            transform-origin: center center; // Point de rotation au centre
+        }
+    }
+}*/
+
+.menu-burger-deco {
+    .deco-cats {
+        .deco-cat-1 {
+            animation: flottementChats 6s ease-in-out infinite;
+        }
+
+        .deco-cat-2 {
+            animation: flottementChats 7s ease-in-out infinite; // Durée légèrement différente
+            animation-delay: 1s; // Délai pour décaler l'animation
+        }
+
+        .deco-cat-3 {
+            animation: flottementChats 5s ease-in-out infinite; // Durée légèrement différente
+            animation-delay: 2s; // Délai pour décaler l'animation
+        }
+    }
+}

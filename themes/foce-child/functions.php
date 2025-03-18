@@ -53,6 +53,14 @@ function wp_enqueue_menu_burger()
 }
 add_action('wp_enqueue_scripts', 'wp_enqueue_menu_burger');
 
+function wp_enqueue_miaou_chat()
+{
+    wp_enqueue_script('miaou-clik-cat.js', get_stylesheet_directory_uri() . '/js/miaou-clik-cat.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'wp_enqueue_miaou_chat');
+
+
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

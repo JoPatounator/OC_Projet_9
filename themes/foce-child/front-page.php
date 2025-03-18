@@ -15,7 +15,7 @@ get_template_part('/template-parts/header');
         </video>
     </section>
 
-    <section id="#story" class="story">
+    <section id="story" class="story">
         <!--<h2>L'histoire</h2>-->
         <h2 class="title">
             <span class="mot-1">L'histoire</span>

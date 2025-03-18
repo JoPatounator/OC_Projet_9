@@ -1,0 +1,47 @@
+// link-slide-up-menu-burger.scss
+
+// Définir l'animation "slide-up" (identique à celle des titres)
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%); // Commence en bas
+        opacity: 0; // Invisible au début
+    }
+
+    50% {
+        transform: translateY(-10%); // Monte légèrement au-dessus de la position finale
+        opacity: 1; // Devient visible
+    }
+
+    100% {
+        transform: translateY(0); // Retour à la position finale
+        opacity: 1; // Reste visible
+    }
+}
+
+// Appliquer l'animation aux liens de navigation du menu burger
+.nav-menu {
+    li {
+        a {
+            opacity: 0; // Les liens sont invisibles au départ
+            display: inline-block; // Permet d'appliquer des transformations
+            animation: slide-up 1.5s ease-in-out forwards; // Applique l'animation
+        }
+
+        // Appliquer des délais différents pour chaque lien
+        &:nth-child(1) a {
+            animation-delay: 0.1s; // Délai pour le premier lien
+        }
+
+        &:nth-child(2) a {
+            animation-delay: 0.3s; // Délai pour le deuxième lien
+        }
+
+        &:nth-child(3) a {
+            animation-delay: 0.5s; // Délai pour le troisième lien
+        }
+
+        &:nth-child(4) a {
+            animation-delay: 0.7s; // Délai pour le quatrième lien
+        }
+    }
+}
