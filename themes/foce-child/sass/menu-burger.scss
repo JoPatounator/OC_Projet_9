@@ -86,9 +86,30 @@ $background-color: rgba(0, 0, 0, 0.9);
             }
 
             // Afficher les éléments de décoration lorsque le menu est ouvert
-            .menu-burger-deco {
+            /*.menu-burger-deco {
                 opacity: 1;
                 height: 943px;
+            }*/
+            // fade-in-decoration-menu-burger.scss
+
+            // Définition de l'animation de fade-in
+            @keyframes fadeIn {
+                from {
+                    opacity: 0; // Commence invisible
+                    //transform: translateY(20px); // Déplace légèrement vers le bas
+                }
+
+                to {
+                    opacity: 1; // Devient visible
+                    //transform: translateY(0); // Retour à la position d'origine
+                }
+            }
+
+            // Appliquer l'animation aux éléments de décoration
+            .menu-burger-deco {
+                opacity: 0;
+                animation: fadeIn 3s ease-in-out; // Animation 2s
+                animation-fill-mode: forwards; // conservation affichage apres la fin 
             }
         }
     }

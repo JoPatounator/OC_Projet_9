@@ -1,14 +1,12 @@
 // Fichier animation "rotation-fleurs.scss"
-// rotation-fleurs.scss
-
 // Définition de l'animation de rotation
 @keyframes rotateFlower {
     from {
-        transform: rotate(0deg); // Commence à 0 degré
+        transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg); // Termine à 360 degrés
+        transform: rotate(360deg);
     }
 }
 
@@ -32,8 +30,6 @@
     & h2::after,
     & h2::before {
         animation: rotateFlower 20s linear infinite;
-        width: 109px;
-        height: 109px;
     }
 }
 

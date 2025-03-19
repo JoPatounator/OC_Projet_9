@@ -29,7 +29,9 @@ body {
     align-items: center;
     position: relative;
     heigHt: 490px;
+    margin-top: 60px;
 }
+
 
 .story #place {
     background-image: url(http://koukaki.local/wp-content/uploads/2025/01/Studio_Koukaki-image_place.png);
@@ -49,4 +51,24 @@ body {
     background-color: #fff5e8;
     z-index: 10;
     padding-top: 265px;
+}
+
+.banner #background-video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin: auto;
+    padding: 0;
+}
+
+.page {
+    width: fit-content;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
 }

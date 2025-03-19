@@ -1,0 +1,349 @@
+//---------------------------------------------------------------------------------------------------------------------------------
+// Téléphones (portrait)
+@media (max-width: 479px) {
+
+    /* Styles pour les petits écrans (téléphones en portrait) */
+    .site {
+        max-width: 100%; // Prend toute la largeur disponible
+        padding: 0 5px; // Réduit l'espace sur les côtés
+    }
+
+    .banner {
+        background-image: url("/wp-content/themes/foce/assets/images/banner.png"); // Appel du fond statique en mode mobile
+        background-size: cover;
+
+        img {
+            display: block; // Affichage image de titre en mode mobile
+            margin-top: -10%;
+            width: 50%;
+        }
+
+        #background-video {
+            display: none; // Masque la video en mode mobile
+        }
+
+
+    }
+
+    .story h2::before {
+        display: none;
+    }
+
+    .story h2::after {
+        display: none;
+    }
+
+    .story__article {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none,
+        }
+    }
+
+    #studio {
+        h2::before {
+            display: none;
+        }
+
+        h2::after {
+            display: none;
+        }
+    }
+
+    .nuages {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .site-footer {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        ul::after {
+            animation: none;
+        }
+
+        .page p {
+            font-size: 2.7em;
+        }
+
+        .site-header .main-navigation a {
+            display: block;
+            text-decoration: none;
+            align-content: center;
+            height: 100px;
+        }
+
+    }
+
+
+
+    .site-header .site-title {
+        font-size: 35px;
+    }
+
+    .page p {
+        font-size: 1.7em;
+    }
+
+
+    .nav-menu {
+        top: 246%;
+    }
+
+    .site-header .main-navigation a {
+        font-size: 50px;
+    }
+
+    .banner img {
+        width: 20%;
+        animation: none;
+    }
+
+    .story__article {
+        width: 50%;
+    }
+
+}
+
+// Téléphones (paysage)
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* Styles pour les téléphones en paysage */
+    .site {
+        max-width: 100%; // Prend toute la largeur disponible
+        padding: 0 5px; // Réduit l'espace sur les côtés
+    }
+
+    .banner {
+        background-image: url("/wp-content/themes/foce/assets/images/banner.png"); // Appel du fond statique en mode mobile
+        background-size: cover;
+
+        img {
+            display: block; // Affichage image de titre en mode mobile
+            margin-top: -10%;
+            width: 50%;
+        }
+
+        #background-video {
+            display: none; // Masque la video en mode mobile
+        }
+
+
+    }
+
+    .story h2::before {
+        display: none;
+    }
+
+    .story h2::after {
+        display: none;
+    }
+
+    .story__article {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none,
+        }
+    }
+
+    #studio {
+        h2::before {
+            display: none;
+        }
+
+        h2::after {
+            display: none;
+        }
+    }
+
+    .nuages {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .site-footer {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        ul::after {
+            animation: none;
+        }
+    }
+
+
+
+    .site-header .site-title {
+        font-size: 35px;
+    }
+
+    .page p {
+        font-size: 1.9em;
+    }
+
+
+    .nav-menu {
+        top: 246%;
+    }
+
+    .site-header .main-navigation a {
+        font-size: 50px;
+    }
+
+    .banner img {
+        width: 20%;
+        animation: none;
+    }
+
+    .story__article {
+        width: 50%;
+    }
+}
+
+// Tablettes (portrait)
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Styles pour les tablettes en portrait */
+    .story h2::before {
+        display: none;
+    }
+
+    .story h2::after {
+        display: none;
+    }
+
+    .story__article {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none,
+        }
+    }
+
+    #studio {
+        h2::before {
+            display: none;
+        }
+
+        h2::after {
+            display: none;
+        }
+    }
+
+
+
+    .nuages {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .site-footer {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        ul::after {
+            animation: none;
+        }
+    }
+
+    .site-header .site-title {
+        font-size: 35px;
+    }
+
+    .characters-slider .swiper-slide figure figcaption {
+        font-size: 25px;
+    }
+
+    .page p {
+        font-size: 1.6em;
+    }
+
+    .banner img {
+        width: 30%;
+    }
+}
+
+// Tablettes (paysage)
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    /* Styles pour les tablettes en paysage */
+    .story h2::before {
+        display: none;
+    }
+
+    .story h2::after {
+        display: none;
+    }
+
+    .story__article {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none,
+        }
+    }
+
+    #studio {
+        h2::before {
+            display: none;
+        }
+
+        h2::after {
+            display: none;
+        }
+    }
+
+    .nuages {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .site-footer {
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .page p {
+        font-size: 1em;
+    }
+
+}
+
+// Ordinateurs de bureau
+@media (min-width: 1201px) and (max-width: 1439px) {}
+
+
+// Grands écrans
+@media (min-width: 1440px) {
+    /* Styles pour les grands écrans */
+}

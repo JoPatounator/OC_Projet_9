@@ -23,21 +23,3 @@
         padding: 0;
     }
 }
-
-// Media query pour les mobiles 
-@media (max-width: 767px) {
-    .banner {
-        background-image: url("/wp-content/themes/foce/assets/images/banner.png"); // Appel du fond statique en mode mobile
-        background-size: cover;
-
-        /*img {
-            display: block; // Affichage image de titre en mode mobile
-            margin-top: -10%;
-            width: 50%;
-        }*/
-
-        #background-video {
-            display: none; // Masque la video en mode mobile
-        }
-    }
-}

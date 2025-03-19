@@ -23,8 +23,8 @@
     li {
         a {
             opacity: 0; // Les liens sont invisibles au départ
-            display: inline-block; // Permet d'appliquer des transformations
-            animation: slide-up 1.5s ease-in-out forwards; // Applique l'animation
+            //display: inline-block; // Permet d'appliquer des transformations
+            animation: slide-up 3s ease-in-out forwards; // Applique l'animation
         }
 
         // Appliquer des délais différents pour chaque lien
