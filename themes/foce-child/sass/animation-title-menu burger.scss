@@ -23,22 +23,9 @@
     }
 }
 
-// Appliquer l'animation à tous les chats dans le menu burger
-/*.menu-burger-deco {
-    .deco-cats {
-
-        .deco-cat-1,
-        .deco-cat-2,
-        .deco-cat-3 {
-            animation: flottementChats 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
-            transform-origin: center center; // Point de rotation au centre
-        }
-    }
-}*/
-
 .menu-burger-deco {
     .deco-logo {
-        animation: flottementTitle 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
+        animation: flottementTitle 6s ease-in-out infinite; // Durée de 6 secondes (fluidite)
         transform-origin: center center; // Point de rotation au centre
     }
 }

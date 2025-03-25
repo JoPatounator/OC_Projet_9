@@ -8,7 +8,7 @@
     }
 
     50% {
-        transform: translateY(-10%); // Monte légèrement au-dessus de la position finale
+        transform: translateY(-10%); // Monte un peu au-dessus de la position finale
         opacity: 1; // Devient visible
     }
 
@@ -29,19 +29,19 @@
 
         // Appliquer des délais différents pour chaque lien
         &:nth-child(1) a {
-            animation-delay: 0.1s; // Délai pour le premier lien
+            animation-delay: 0.1s; // Delai lien 1
         }
 
         &:nth-child(2) a {
-            animation-delay: 0.3s; // Délai pour le deuxième lien
+            animation-delay: 0.3s; // Delai lien 2
         }
 
         &:nth-child(3) a {
-            animation-delay: 0.5s; // Délai pour le troisième lien
+            animation-delay: 0.5s; // Delai lien 3
         }
 
         &:nth-child(4) a {
-            animation-delay: 0.7s; // Délai pour le quatrième lien
+            animation-delay: 0.7s; // Delai lien 4
         }
     }
 }

@@ -22,15 +22,15 @@ section {
     }
 
     &.story {
-        animation-delay: 2s; // Delai de 2 seconde pour .story
+        animation-delay: 2s; // Delai de 2 seconde sur .story
     }
 
     &#studio {
-        animation-delay: 4s; // Delai de 4 secondes pour #studio
+        animation-delay: 4s; // Delai de 4 secondes sur #studio
     }
 
     &.oscars-court-metrage {
-        animation-delay: 6s; // Delai de 6 secondes pour #studio
+        animation-delay: 6s; // Delai de 6 secondes sur #studio
 
     }
 }

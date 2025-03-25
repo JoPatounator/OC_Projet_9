@@ -1,5 +1,5 @@
 <?php
-/* Template partiel SwiperJS.*/
+// Template partiel SwiperJS.
 ?>
 <div class="characters-slider">
     <h3>Les personnages</h3>

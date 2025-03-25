@@ -1,20 +1,17 @@
-/* Définir l'animation "slide-up" */
+// Def animation "slide-up"
 @keyframes slide-up {
     0% {
-        /* Au début, la lettre commence en bas et est invisible */
         transform: translateY(100%);
         opacity: 0;
     }
 
 
     50% {
-        /* À la moitié de l'animation, la lettre monte légèrement au-dessus de sa position finale */
         transform: translateY(-10%);
         opacity: 1;
     }
 
     100% {
-        /* À la fin de l'animation, la lettre est à sa position finale et entièrement visible */
         transform: translateY(0);
         opacity: 1;
     }
