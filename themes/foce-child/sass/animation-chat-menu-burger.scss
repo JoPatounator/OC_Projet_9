@@ -23,19 +23,6 @@
     }
 }
 
-// Appliquer l'animation à tous les chats dans le menu burger
-/*.menu-burger-deco {
-    .deco-cats {
-
-        .deco-cat-1,
-        .deco-cat-2,
-        .deco-cat-3 {
-            animation: flottementChats 6s ease-in-out infinite; // Durée de 6 secondes pour un mouvement fluide
-            transform-origin: center center; // Point de rotation au centre
-        }
-    }
-}*/
-
 .menu-burger-deco {
     .deco-cats {
         .deco-cat-1 {
@@ -43,13 +30,13 @@
         }
 
         .deco-cat-2 {
-            animation: flottementChats 7s ease-in-out infinite; // Durée légèrement différente
-            animation-delay: 1s; // Délai pour décaler l'animation
+            animation: flottementChats 7s ease-in-out infinite; // Duree 
+            animation-delay: 1s; // Delai pour decaler l'animation
         }
 
         .deco-cat-3 {
-            animation: flottementChats 5s ease-in-out infinite; // Durée légèrement différente
-            animation-delay: 2s; // Délai pour décaler l'animation
+            animation: flottementChats 5s ease-in-out infinite; // Duree 
+            animation-delay: 2s; // Delai
         }
     }
 }

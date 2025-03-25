@@ -2,7 +2,7 @@
 // Téléphones (portrait)
 @media (max-width: 479px) {
 
-    /* Styles pour les petits écrans (téléphones en portrait) */
+    //Styles petits écrans
     .site {
         max-width: 100%; // Prend toute la largeur disponible
         padding: 0 5px; // Réduit l'espace sur les côtés
@@ -101,7 +101,9 @@
 
     .site-header .main-navigation a {
         font-size: 50px;
+        height: 1.8em;
     }
+
 
     .banner img {
         width: 20%;
@@ -117,7 +119,7 @@
 // Téléphones (paysage)
 @media (min-width: 480px) and (max-width: 767px) {
 
-    /* Styles pour les téléphones en paysage */
+    //Style telephones en paysage
     .site {
         max-width: 100%; // Prend toute la largeur disponible
         padding: 0 5px; // Réduit l'espace sur les côtés
@@ -194,7 +196,7 @@
     }
 
     .page p {
-        font-size: 1.9em;
+        font-size: 2.3em;
     }
 
 
@@ -219,7 +221,7 @@
 // Tablettes (portrait)
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    /* Styles pour les tablettes en portrait */
+    //Style tablettes en portrait
     .story h2::before {
         display: none;
     }
@@ -289,7 +291,7 @@
 // Tablettes (paysage)
 @media (min-width: 1024px) and (max-width: 1200px) {
 
-    /* Styles pour les tablettes en paysage */
+
     .story h2::before {
         display: none;
     }
@@ -337,13 +339,4 @@
         font-size: 1em;
     }
 
-}
-
-// Ordinateurs de bureau
-@media (min-width: 1201px) and (max-width: 1439px) {}
-
-
-// Grands écrans
-@media (min-width: 1440px) {
-    /* Styles pour les grands écrans */
 }

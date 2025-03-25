@@ -22,7 +22,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<div class="background-mask-flower">
+<!--<div class="background-mask-flower">-->
 
 </div>
 

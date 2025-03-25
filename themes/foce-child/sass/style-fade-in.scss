@@ -10,7 +10,7 @@
     }
 }
 
-// Communs à toutes les sections
+// Communs a toutes les sections
 section {
     opacity: 0;
     animation: fadeIn 2s ease-in-out; // Animation 2s
@@ -18,19 +18,19 @@ section {
 
     //Spécifiques à chaque section
     &.banner {
-        animation-delay: 0s; // Pas de délai pour .banner
+        animation-delay: 0s; // Pas de delai pour .banner
     }
 
     &.story {
-        animation-delay: 2s; // Délai de 1 seconde pour .story
+        animation-delay: 2s; // Delai de 2 seconde pour .story
     }
 
     &#studio {
-        animation-delay: 4s; // Délai de 2 secondes pour #studio
+        animation-delay: 4s; // Delai de 4 secondes pour #studio
     }
 
     &.oscars-court-metrage {
-        animation-delay: 6s; // Délai de 3 secondes pour #studio
+        animation-delay: 6s; // Delai de 6 secondes pour #studio
 
     }
 }

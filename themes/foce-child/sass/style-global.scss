@@ -1,5 +1,11 @@
 //Fichier "style-global.scss"
 
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,7 +17,7 @@ body {
 }
 
 .site-footer {
-    overflow: visible; // A supprimer lorsque le court metrage ne sera plus d'actualité !!! 
+    overflow: hidden; // A supprimer lorsque le court metrage ne sera plus d'actualité !!! 
 }
 
 .site-footer::after {
@@ -71,4 +77,5 @@ body {
     max-width: 1440px;
     margin: auto;
     overflow-x: hidden;
+    height: 4481px;
 }

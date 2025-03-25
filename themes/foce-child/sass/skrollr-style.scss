@@ -1,0 +1,17 @@
+// Skrollr Style
+$desktop-max-width: 1440px;
+$desktop-side-padding: 20px;
+
+
+html.skrollr.skrollr-desktop {
+
+
+    max-width: $desktop-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $desktop-side-padding;
+    padding-right: $desktop-side-padding;
+    width: 100%;
+    box-sizing: border-box;
+
+}

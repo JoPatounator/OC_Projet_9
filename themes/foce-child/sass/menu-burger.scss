@@ -1,4 +1,4 @@
-//Fonctionne mais les fleurs débordent !!!!
+//Gestion du menu burger .
 
 $text-color: #333;
 $background-color: rgba(0, 0, 0, 0.9);
@@ -52,20 +52,6 @@ $background-color: rgba(0, 0, 0, 0.9);
                 opacity: 1;
             }
 
-            /*.nav-menu {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                top: 105%;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                z-index: 3; // Menu burger au-dessus des éléments de décoration
-                gap: 57px;
-            }*/
-
             .nav-menu {
                 display: flex;
                 flex-direction: column;
@@ -85,27 +71,18 @@ $background-color: rgba(0, 0, 0, 0.9);
                 margin: 10px 0;
             }
 
-            // Afficher les éléments de décoration lorsque le menu est ouvert
-            /*.menu-burger-deco {
-                opacity: 1;
-                height: 943px;
-            }*/
-            // fade-in-decoration-menu-burger.scss
-
-            // Définition de l'animation de fade-in
+            // Def de l'animation de fade-in
             @keyframes fadeIn {
                 from {
-                    opacity: 0; // Commence invisible
-                    //transform: translateY(20px); // Déplace légèrement vers le bas
+                    opacity: 0; // Commence invisible 
                 }
 
                 to {
                     opacity: 1; // Devient visible
-                    //transform: translateY(0); // Retour à la position d'origine
                 }
             }
 
-            // Appliquer l'animation aux éléments de décoration
+            // Appliquer l'animation aux elements de deco
             .menu-burger-deco {
                 opacity: 0;
                 animation: fadeIn 3s ease-in-out; // Animation 2s
@@ -157,7 +134,7 @@ $background-color: rgba(0, 0, 0, 0.9);
     }
 }
 
-// Styles pour les liens du menu déroulant
+// Styles pour les liens du menu
 .nav-menu li a {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
@@ -174,19 +151,19 @@ $background-color: rgba(0, 0, 0, 0.9);
     }
 }
 
-// Masque pour la vidéo (optionnel)
+// Masque pour la video
 .background-video-mask {
     background-color: #fff5e8;
 }
 
-// Styles pour les éléments de décoration du menu burger
+// Styles pour les elements de decoration du menu burger
 .menu-burger-deco {
     position: absolute;
     //position:relative;
     width: 100%;
     height: 102vh;
     top: 80px;
-    overflow: hidden; // Masque les débordements
+    overflow: hidden; // Masque les debordements
     z-index: 2;
     opacity: 0;
 
@@ -269,7 +246,7 @@ $background-color: rgba(0, 0, 0, 0.9);
     .deco-footer {
         position: absolute;
         bottom: 34px;
-        left: 640px; // Centré horizontalement
-        width: 160px; // A ajuster
+        left: 640px;
+        width: 160px; // A ajuster...
     }
 }

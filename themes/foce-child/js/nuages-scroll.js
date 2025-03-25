@@ -1,4 +1,4 @@
-document.addEventListener('scroll', () => { // Ecouteur de l'action scromll.
+document.addEventListener('scroll', () => { // Ecouteur de evenements scromll.
     const scrollY = window.scrollY; // Distance en Y effectuée
     const grosNuage = document.querySelector('.gros-nuage'); // Selection gros nuage
     const petitNuage = document.querySelector('.petit-nuage'); // Selection petit nuage

@@ -60,3 +60,7 @@ var swiper = new Swiper('.characters-swiper', {
     el: ".swiper-pagination",
   },
 });
+
+window.addEventListener('resize', () => {
+  swiper.update();
+});
